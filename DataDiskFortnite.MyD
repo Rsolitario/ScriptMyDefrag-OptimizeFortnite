@@ -16,6 +16,12 @@ MakeGap(RoundUp(SystemFilesPosition,VolumeSize * 0.01), DoNotVacate)
     AddGap(RoundUp(ZoneEnd + 8Mi,32Mi), DoNotVacate)
   FileEnd
 
+  FileSelect
+    All
+  FileActions
+    MoveToEndOfDisk()
+  FileEnd
+  
 AppendLogfile("MyDefrag.log","LogAfter")
 
 VolumeEnd
