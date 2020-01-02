@@ -1,0 +1,23 @@
+Title('Optmizar Fortnite')
+Description("Reubica los archivos de Epic Games al principio del Disco Duro")
+WriteLogfile("MyDefrag.log","LogHeader")
+
+VolumeSelect
+	CommandlineVolumes()
+VolumeActions
+AppendLogfile("MyDefrag.log","LogBefore")
+
+MakeGap(RoundUp(SystemFilesPosition,VolumeSize * 0.01), DoNotVacate)
+
+ FileSelect
+	DirectoryName("Epic Games")
+  FileActions
+    SortBySize(Ascending)
+    AddGap(RoundUp(ZoneEnd + 8Mi,32Mi), DoNotVacate)
+  FileEnd
+
+AppendLogfile("MyDefrag.log","LogAfter")
+
+VolumeEnd
+
+AppendLogfile("MyDefrag.log","LogFooter")
