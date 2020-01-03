@@ -7,7 +7,7 @@ VolumeSelect
 VolumeActions
 AppendLogfile("MyDefrag.log","LogBefore")
 
-MakeGap(RoundUp(SystemFilesPosition,VolumeSize * 0.01), DoNotVacate)
+MakeGap(RoundUp(SystemFilesPosition,VolumeSize * 0.04), DoNotVacate)
 
  FileSelect
 	DirectoryName("Epic Games")
