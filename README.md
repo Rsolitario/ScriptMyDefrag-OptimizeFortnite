@@ -6,4 +6,4 @@ Reubica los archivos de Epic Games al inicio del disco duro.
 2. Desfragmenta con myDefrag.exe
 3. Activa los archivos de paginación
 
-![Reubicación de Archivos](https://ibb.co/tHqsWP9 "Reubicación de Archivos")
+![](https://i.ibb.co/NF9jHnM/desfragmentar.png "Reubicación de Archivos")
